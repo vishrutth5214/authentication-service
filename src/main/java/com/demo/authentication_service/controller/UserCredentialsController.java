@@ -31,6 +31,7 @@ public class UserCredentialsController {
 	public UserCredentialsEntity register(@RequestBody UserCredentialsEntity user) {
 		return userCredService.register(user);
 	}
+	//efsdfsdfsd
 
 	@GetMapping("/validate/token")
 	public boolean validateToken(@RequestParam String token) {
