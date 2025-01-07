@@ -34,6 +34,7 @@ public class UserCredentialsController {
 
 	@GetMapping("/validate/token")
 	public boolean validateToken(@RequestParam String token) {
+		return userCredService.verifyToken(token);
 	}
 
 	@PostMapping("/validate/user")
