@@ -12,10 +12,6 @@ pipeline {
         stage('Build'){
             steps {bat "mvn clean install -DskipTests"}
         }
-        stage('Pre-Deploy'){
-            steps {bat "docker rm -f auth-cntr"
-                        bat "docker rmi -f auth-img"}
-        }
         stage('Deploy'){
             steps {bat "docker build -t auth-img ."
                         bat "docker run -d -p 3090:8090 --name auth-cntr --network my-net auth-img"}
