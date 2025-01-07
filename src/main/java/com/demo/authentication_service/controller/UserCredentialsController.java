@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.demo.authentication_service.dao.UserCredentialsEntity;
 import com.demo.authentication_service.service.JwtService;
 import com.demo.authentication_service.service.UserCredentialsService;
-
+//ddgxdtd
 @RestController
 @RequestMapping("/api/auth")
 public class UserCredentialsController {
